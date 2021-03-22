@@ -13,4 +13,4 @@ Our solution increases linearly as the array length increases. It is O^n.
 We went as simple as we could. Here is a picture of our whiteboard.
 
 
-![My Groups Whiteboard](whiteboard-1.png "Whiteboard")
+![My Groups Whiteboard](assests/whiteboard-1.png "Whiteboard")
