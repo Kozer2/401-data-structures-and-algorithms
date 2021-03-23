@@ -15,12 +15,12 @@ namespace Challenges
             ArrayReverse.Reverse(arrTest);
             ArrayReverse.Reverse(arrTest2);*/
 
-            int[] numArrTest = new int[5] { 4, 8, 15, 23, 42 };
+        /*    int[] numArrTest = new int[5] { 4, 8, 15, 23, 42 };
             int num = 16;
 
             // act
             int[] result = ArrayShift.insertShiftArray(numArrTest, num);
-            Console.WriteLine(String.Join(',', result));
+            Console.WriteLine(String.Join(',', result));*/
         }
     }
 }
