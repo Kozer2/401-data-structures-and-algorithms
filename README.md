@@ -30,7 +30,7 @@ Our solution increases linearly as the array length increases. It is O n
 ## Solution
 Our solution to this was to find and store the middle of the array and then compare the numbers in the array to that variable. Once it was larger than a number in the array we inserted the given number. 
 
-
+https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs
 ![My Groups Whiteboard](assests/Whiteboard-2.PNG "Whiteboard")
 
 
