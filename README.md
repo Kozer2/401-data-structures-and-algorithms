@@ -34,3 +34,19 @@ Our solution to this was to find and store the middle of the array and then comp
 ![My Groups Whiteboard](assests/Whiteboard-2.PNG "Whiteboard")
 
 
+
+# Binary Array Search
+This function uses binary search to sort through arrays
+
+## Challenge
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Approach & Efficiency
+We looked at this with O(log n) and knew we needed to find the small starting number, the max number, and the mid. 
+
+## Solution
+To find the mid Number I took the max number, added the minimium to it and then divided them by 2.
+
+![My Groups Whiteboard](assests/Whiteboard-3.jpeg "Whiteboard")
+
+
