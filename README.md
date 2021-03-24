@@ -46,7 +46,7 @@ We looked at this with O(log n) and knew we needed to find the small starting nu
 
 ## Solution
 To find the mid Number I took the max number, added the minimium to it and then divided them by 2.
-
+https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs
 ![My Groups Whiteboard](assests/Whiteboard-3.jpeg "Whiteboard")
 
 
