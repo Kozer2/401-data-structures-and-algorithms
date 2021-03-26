@@ -71,7 +71,7 @@ namespace Challenges.Tests.ArrayChallenges
         {
             // arrange
             int[] numArrTest = new int[0];
-            int num = 55;
+            int num = 11;
 
             // act
             int result = BinarySearch.arrayBinarySearch(numArrTest, num);
