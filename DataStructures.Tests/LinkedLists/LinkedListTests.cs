@@ -68,7 +68,46 @@ namespace DataStructures.Tests.LinkedLists
             Assert.Equal(5, list.Head.Next.Value);
         }
 
-        [Theory]
+        [Fact]
+        public void ToString_returns_null_with_empty_list()
+        {
+            // Arrange
+            
+            LinkedList list = new LinkedList();
+
+
+            // Act
+            string result = list.ToString();
+
+            //Assert
+            Assert.Null(result);
+
+        }
+
+
+        [Fact]
+        public void ToString_returns_value_with_single_node_list()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+
+
+            // Act
+            string result = list.ToString();
+
+
+            //Assert
+            Assert.Equal("4", result);
+
+        }
+
+
+
+
+
+
+        [Theory(Skip = "Skipping due to time")]
         [InlineData(1, false)]
         [InlineData(2, true)]
         [InlineData(3, true)]
@@ -86,6 +125,8 @@ namespace DataStructures.Tests.LinkedLists
             //Assert
             Assert.Equal(expected, result);
         }
+
+
 
 
 
