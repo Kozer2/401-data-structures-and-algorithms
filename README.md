@@ -69,5 +69,22 @@ Be sure to follow your language/frameworks standard naming conventions (e.g. C# 
 ## Approach & Efficiency
 Big On
 
-## API
-<!-- Description of each method publicly available to your Linked List -->
+
+
+# Linked List
+Work over Linked Lists
+
+## Challenge
+Write the following methods for the Linked List class:
+
+.append(value) which adds a new node with the given value to the end of the list
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+## Approach & Efficiency
+
+
+## Solution
+
+
+![My Groups Whiteboard](assests/Whiteboard-4.jpeg "Whiteboard")

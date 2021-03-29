@@ -50,5 +50,16 @@ namespace DataStructures.LinkedLists
             return "NULL";
 
         }
+
+
+        public void append(int value)
+        {
+            if(Head == null)
+            {
+                Head = value;
+                Head.Next = null;
+            }
+
+        }
     }
 }
