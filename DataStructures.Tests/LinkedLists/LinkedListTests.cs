@@ -163,7 +163,24 @@ namespace DataStructures.Tests.LinkedLists
 
         }
 
+        [Fact]
+        public void Append_adds_multiple_nodes_to_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
 
+            // act
+            list.Append(4);
+            list.Append(5);
+            list.Append(6);
+            list.Append(1);
+            string result = list.ToString();
+            // assert
+            Assert.Equal("3,2,1,4,5,6,1, null", result);
+        }
 
 
 
