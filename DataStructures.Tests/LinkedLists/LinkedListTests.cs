@@ -145,6 +145,25 @@ namespace DataStructures.Tests.LinkedLists
         }
 
 
+        [Fact]
+        public void Append_adds_to_end_of_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+
+            // act
+            list.Append(4);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("3,2,1,4, null", result);
+
+        }
+
+
 
 
 
