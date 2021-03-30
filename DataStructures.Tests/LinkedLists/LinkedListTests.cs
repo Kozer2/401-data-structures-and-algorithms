@@ -182,7 +182,23 @@ namespace DataStructures.Tests.LinkedLists
             Assert.Equal("3,2,1,4,5,6,1, null", result);
         }
 
+        [Fact]
+        public void InsertBefore_adds_node_infront_of_first_time_node_appears_with_same_value()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(3);
 
+            // act
+            list.InsertBefore(3, 2);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("2,3,3,2,1, null", result);
+        }
 
     }
 
