@@ -235,6 +235,109 @@ namespace DataStructures.Tests.LinkedLists
             Assert.Equal("4,3,2,1,5, null", result);
         }
 
+
+        [Fact]
+        public void Kth_from_end_inserting_at_Nth_point()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(4);
+            list.Insert(5);
+ 
+
+            // act
+            list.KthFromEnd(2);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("5,4,3,2,1, null", result);
+        }
+
+        [Fact]
+        public void Kth_K_is_bigger_than_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(4);
+            list.Insert(5);
+
+
+            // assert
+            Assert.Throws<ArgumentException>(() =>
+            {
+                // act
+                list.KthFromEnd(8);
+                string result = list.ToString();
+
+            });
+        }
+
+
+        [Fact]
+        public void Kth_K_and_list_are_same_size()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(4);
+            list.Insert(5);
+
+
+            // act
+            list.KthFromEnd(4);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("5,4,3,2,1, null", result);
+        }
+
+
+        [Fact]
+        public void Kth_K_is_negative()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+
+            // assert
+            Assert.Throws<ArgumentException>(() =>
+            {
+                // act
+                list.KthFromEnd(-5);
+                string result = list.ToString();
+
+            });
+        }
+
+
+        [Fact]
+        public void Kth_list_is_size_1()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+
+            // assert
+            Assert.Throws<ArgumentException>(() =>
+            {
+                // act
+                list.KthFromEnd(1);
+                string result = list.ToString();
+
+            });
+        }
+
+
     }
 
 

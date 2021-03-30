@@ -108,5 +108,41 @@ namespace DataStructures.LinkedLists
             } // end while
         }
 
+        public int KthFromEnd(int k)
+        {
+            Current = Head;
+
+            if (k < 0)
+            {
+                throw new ArgumentException("Argument out of bounds!");
+            } // end if
+
+            if (Current == null)
+            {
+                throw new ArgumentException("Argument out of bounds!");
+            }// end if
+
+            for (int i = 0; i < k; i++)
+            {
+                if (Current.Next == null)
+                {
+                    throw new ArgumentException("Argument out of bounds!");
+                } // end if
+                Current = Current.Next;
+            }// end for
+
+            Node positionK = Head;
+            while(Current != null)
+            {
+                if(Current.Next == null)
+                {
+                    return positionK.Value;
+                } // end if
+                Current = Current.Next;
+                positionK = positionK.Next;
+            }
+            throw new ArgumentException("Who knows, just run.");
+        }
+
     }
 }
