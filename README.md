@@ -1,10 +1,10 @@
 # 401-data-structures-and-algorithms
 
 Table of Contents
-- [Lab 1](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayReverse.cs)
-- [Lab2](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs)
-- [Lab3](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs)
-- [Lab4](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
+- [Challenge 1](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayReverse.cs)
+- [Challenge 2](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs)
+- [Challenge 3](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs)
+- [Challenge 6](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
 
 
 
