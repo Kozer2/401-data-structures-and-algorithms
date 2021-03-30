@@ -200,6 +200,21 @@ namespace DataStructures.Tests.LinkedLists
             Assert.Equal("2,3,3,2,1, null", result);
         }
 
+        [Fact]
+        public void InsertBefore_adds_node_to_front_of_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+
+            // act
+            list.InsertBefore(1, 100);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("100,1, null", result);
+        }
+
     }
 
 
