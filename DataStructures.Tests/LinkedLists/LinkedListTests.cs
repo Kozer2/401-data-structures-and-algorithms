@@ -235,6 +235,26 @@ namespace DataStructures.Tests.LinkedLists
             Assert.Equal("4,3,2,1,5, null", result);
         }
 
+
+        [Fact]
+        public void Kth_from_end_inserting_at_Nth_point()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(4);
+            list.Insert(5);
+ 
+
+            // act
+            list.KthFromEnd(2);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("4,3,2,1,5, null", result);
+        }
     }
 
 
