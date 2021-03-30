@@ -4,7 +4,6 @@ namespace DataStructures.LinkedLists
 {
     public class Node
     {
-        private int value;
 
         public Node(int value)
         {
