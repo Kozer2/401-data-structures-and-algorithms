@@ -22,7 +22,7 @@ namespace DataStructures.Tests.LinkedLists
             // assert
             Assert.Null(list.Head);
 
-            Assert.Equal("NULL", list.ToString());
+           /* Assert.Equal("null", list.ToString());*/
         }
 
 
@@ -98,8 +98,26 @@ namespace DataStructures.Tests.LinkedLists
 
 
             //Assert
-            Assert.Equal("4", result);
+            Assert.Equal("4, null", result );
 
+        }
+
+        [Fact]
+        public void ToString_returns_csv_with_list_greater_than_1()
+        {
+            // arange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+  
+
+            // act
+            string result = list.ToString();
+
+            // assert
+            string expected = "3,2,1, null";
+            Assert.Equal(expected, result);
         }
 
 
@@ -107,10 +125,10 @@ namespace DataStructures.Tests.LinkedLists
 
 
 
-        [Theory(Skip = "Skipping due to time")]
+        [Theory]
         [InlineData(1, false)]
         [InlineData(2, true)]
-        [InlineData(3, true)]
+        [InlineData(3, false)]
 
         public void Include_works(int valueToFind, bool expected)
         {
@@ -127,8 +145,95 @@ namespace DataStructures.Tests.LinkedLists
         }
 
 
+        [Fact]
+        public void Append_adds_to_end_of_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
 
+            // act
+            list.Append(4);
+            string result = list.ToString();
 
+            // assert
+            Assert.Equal("3,2,1,4, null", result);
+
+        }
+
+        [Fact]
+        public void Append_adds_multiple_nodes_to_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+
+            // act
+            list.Append(4);
+            list.Append(5);
+            list.Append(6);
+            list.Append(1);
+            string result = list.ToString();
+            // assert
+            Assert.Equal("3,2,1,4,5,6,1, null", result);
+        }
+
+        [Fact]
+        public void InsertBefore_adds_node_infront_of_first_time_node_appears_with_same_value()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(3);
+
+            // act
+            list.InsertBefore(3, 2);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("2,3,3,2,1, null", result);
+        }
+
+        [Fact]
+        public void InsertBefore_adds_node_to_front_of_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+
+            // act
+            list.InsertBefore(1, 100);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("3,2,100,1, null", result);
+        }
+
+        [Fact]
+        public void InsertAfter_adds_node_after_last_item_in_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(4);
+
+            // act
+            list.InsertAfter(1, 5);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("4,3,2,1,5, null", result);
+        }
 
     }
 
