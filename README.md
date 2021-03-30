@@ -1,5 +1,13 @@
 # 401-data-structures-and-algorithms
 
+Table of Contents
+- [Challenge 1](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayReverse.cs)
+- [Challenge 2](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs)
+- [Challenge 3](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs)
+- [Challenge 6](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
+
+
+
 # Reverse an Array
 This console app takes an array of an indeterminate length and then reverses it and returns it back to the user. 
 
@@ -30,7 +38,7 @@ Our solution increases linearly as the array length increases. It is O n
 ## Solution
 Our solution to this was to find and store the middle of the array and then compare the numbers in the array to that variable. Once it was larger than a number in the array we inserted the given number. 
 
-
+https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs
 ![My Groups Whiteboard](assests/Whiteboard-2.PNG "Whiteboard")
 
 
@@ -46,7 +54,7 @@ We looked at this with O(log n) and knew we needed to find the small starting nu
 
 ## Solution
 To find the mid Number I took the max number, added the minimium to it and then divided them by 2.
-
+https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs
 ![My Groups Whiteboard](assests/Whiteboard-3.jpeg "Whiteboard")
 
 
@@ -104,3 +112,4 @@ The Big O for this is On
 
 ## Solution
 ![My Groups Whiteboard](assests/Whiteboard-5.jpeg "Whiteboard")
+
