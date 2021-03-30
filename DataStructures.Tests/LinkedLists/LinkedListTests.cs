@@ -22,7 +22,7 @@ namespace DataStructures.Tests.LinkedLists
             // assert
             Assert.Null(list.Head);
 
-            Assert.Equal("NULL", list.ToString());
+           /* Assert.Equal("null", list.ToString());*/
         }
 
 
@@ -98,8 +98,26 @@ namespace DataStructures.Tests.LinkedLists
 
 
             //Assert
-            Assert.Equal("4", result);
+            Assert.Equal("4, null", result );
 
+        }
+
+        [Fact]
+        public void ToString_returns_csv_with_list_greater_than_1()
+        {
+            // arange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+  
+
+            // act
+            string result = list.ToString();
+
+            // assert
+            string expected = "3,2,1, null";
+            Assert.Equal(expected, result);
         }
 
 
@@ -107,10 +125,10 @@ namespace DataStructures.Tests.LinkedLists
 
 
 
-        [Theory(Skip = "Skipping due to time")]
+        [Theory]
         [InlineData(1, false)]
         [InlineData(2, true)]
-        [InlineData(3, true)]
+        [InlineData(3, false)]
 
         public void Include_works(int valueToFind, bool expected)
         {
