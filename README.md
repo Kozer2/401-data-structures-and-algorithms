@@ -5,6 +5,7 @@ Table of Contents
 - [Challenge 2](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs)
 - [Challenge 3](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs)
 - [Challenge 6](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
+- [Challenge 7](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/DataStructures/LinkedLists/LinkedList.cs)
 
 
 
@@ -95,7 +96,7 @@ Write the following methods for the Linked List class:
 ## Solution
 
 
-![My Groups Whiteboard](assests/Whiteboard-4.jpeg "Whiteboard")
+![My Groups Whiteboard](assests/whiteboard-4.jpeg "Whiteboard")
 
 
 
