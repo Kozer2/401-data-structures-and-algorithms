@@ -206,13 +206,33 @@ namespace DataStructures.Tests.LinkedLists
             // arrange
             LinkedList list = new LinkedList();
             list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
 
             // act
             list.InsertBefore(1, 100);
             string result = list.ToString();
 
             // assert
-            Assert.Equal("100,1, null", result);
+            Assert.Equal("3,2,100,1, null", result);
+        }
+
+        [Fact]
+        public void InsertAfter_adds_node_after_last_item_in_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
+            list.Insert(4);
+
+            // act
+            list.InsertAfter(1, 5);
+            string result = list.ToString();
+
+            // assert
+            Assert.Equal("4,3,2,1,5, null", result);
         }
 
     }

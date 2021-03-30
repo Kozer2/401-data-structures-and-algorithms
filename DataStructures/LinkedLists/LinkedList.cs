@@ -86,11 +86,6 @@ namespace DataStructures.LinkedLists
 
             while (current.Next.Value != valueBefore)
             {
-                if (current.Next == null)
-                {
-                    throw new ArgumentException("No Value Found.");
-                } // end if
-                  
                 current = current.Next;
             } // end while
             newNode.Next = current.Next;
@@ -99,19 +94,18 @@ namespace DataStructures.LinkedLists
 
         public void InsertAfter(int valueAfter, int newValue)
         {
-            Node current = Head;
+            Current = Head;
             Node newNode = new Node(newValue);
-            while (current != null)
+            while (Current != null)
             {
-                if (current.Value == valueAfter)
+                if (Current.Value == valueAfter)
                 {
-                    newNode.Next = current.Next;
-                    current.Next = newNode;
-                    break;
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                    return;
                 } // end if
-                current = current.Next;
+                Current = Current.Next;
             } // end while
-            throw new ArgumentException("No Value Found.");
         }
 
     }
