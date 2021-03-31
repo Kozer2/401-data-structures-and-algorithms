@@ -104,3 +104,18 @@ The Big O for this is On
 
 ## Solution
 ![My Groups Whiteboard](assests/Whiteboard-5.jpeg "Whiteboard")
+
+
+
+
+# Challenge Summary
+Our challenge for today is to write a method that will take 2 linked lists and zip them together without making a new list.
+
+## Challenge Description
+Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+We want to keep it close to Big On
+
+## Solution
+![My Groups Whiteboard](assests/Whiteboard-6.jpeg "Whiteboard")
