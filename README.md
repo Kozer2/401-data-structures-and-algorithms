@@ -1,13 +1,5 @@
+
 # 401-data-structures-and-algorithms
-
-Table of Contents
-- [Challenge 1](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayReverse.cs)
-- [Challenge 2](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs)
-- [Challenge 3](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs)
-- [Challenge 6](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
-- [Challenge 7](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/DataStructures/LinkedLists/LinkedList.cs)
-
-
 
 # Reverse an Array
 This console app takes an array of an indeterminate length and then reverses it and returns it back to the user. 
@@ -39,7 +31,7 @@ Our solution increases linearly as the array length increases. It is O n
 ## Solution
 Our solution to this was to find and store the middle of the array and then compare the numbers in the array to that variable. Once it was larger than a number in the array we inserted the given number. 
 
-https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/ArrayShift.cs
+
 ![My Groups Whiteboard](assests/Whiteboard-2.PNG "Whiteboard")
 
 
@@ -55,7 +47,7 @@ We looked at this with O(log n) and knew we needed to find the small starting nu
 
 ## Solution
 To find the mid Number I took the max number, added the minimium to it and then divided them by 2.
-https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/ArrayChallenges/BinarySearch.cs
+
 ![My Groups Whiteboard](assests/Whiteboard-3.jpeg "Whiteboard")
 
 
@@ -96,7 +88,7 @@ Write the following methods for the Linked List class:
 ## Solution
 
 
-![My Groups Whiteboard](assests/whiteboard-4.jpeg "Whiteboard")
+![My Groups Whiteboard](assests/Whiteboard-4.jpeg "Whiteboard")
 
 
 
@@ -114,3 +106,17 @@ The Big O for this is On
 ## Solution
 ![My Groups Whiteboard](assests/Whiteboard-5.jpeg "Whiteboard")
 
+
+
+
+# Challenge Summary
+Our challenge for today is to write a method that will take 2 linked lists and zip them together without making a new list.
+
+## Challenge Description
+Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+We want to keep it close to Big On
+
+## Solution
+![My Groups Whiteboard](assests/Whiteboard-6.jpeg "Whiteboard")
