@@ -338,6 +338,83 @@ namespace DataStructures.Tests.LinkedLists
         }
 
 
+        [Fact]
+        public void Zip_method_works_and_zips_list()
+        {
+            // arrange
+            LinkedList list = new LinkedList();
+            list.Insert(1);
+
+            // assert
+            Assert.Throws<ArgumentException>(() =>
+            {
+                // act
+                list.KthFromEnd(1);
+                string result = list.ToString();
+
+            });
+        }
+
+
+        [Fact]
+        public void Ziplist_returns_list1_with_no_list2()
+        {
+            // arrange
+            LinkedList list1 = new LinkedList();
+            LinkedList list2 = new LinkedList();
+            list1.Insert(1);
+            list1.Insert(2);
+            list1.Insert(3);
+
+            // act
+            LinkedList result = LLZip.ZipLists(list1, list2);
+
+            // assert
+            Assert.Equal(list1, result);
+
+        }
+
+        [Fact]
+        public void Ziplist_returns_list2_with_no_list1() 
+        {
+            // arrange
+            LinkedList list1 = new LinkedList();
+            LinkedList list2 = new LinkedList();
+            list2.Insert(1);
+            list2.Insert(2);
+            list2.Insert(3);
+
+            // act
+            LinkedList result = LLZip.ZipLists(list1, list2);
+
+            // assert
+            Assert.Equal(list2, result);
+
+        }
+  
+        [Fact]
+        public void ZipLists_works_and_zips_2_lists()
+        {
+            // arrange
+            LinkedList list1 = new LinkedList();
+            LinkedList list2 = new LinkedList();
+            list1.Insert(2);
+            list1.Insert(3);
+            list1.Insert(1);
+            
+            list2.Insert(4);
+            list2.Insert(9);
+            list2.Insert(5);
+
+
+            // act
+            LinkedList result = LLZip.ZipLists(list1, list2);
+
+            // assert
+            Assert.Equal("1,5,3,9,2,4, null", result.ToString());
+
+        }
+
 
 
 
