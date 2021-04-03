@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DataStructures.StackNQueue
 {
-    public class Node
+    public class Node<T>
     {
-
-        public class Node<T>
+        public T Value { get; set; }
+        public Node<T> Next { get; set; }
+        public Node(T value)
         {
-            public T Value { get; set; }
-            public Node<T> Next { get; set; }
-            public Node(T value)
-            {
-                Value = value;
-            }
+            Value = value;
         }
+    }
+}

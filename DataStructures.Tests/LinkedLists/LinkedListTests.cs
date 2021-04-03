@@ -9,7 +9,7 @@ using Xunit;
 namespace DataStructures.Tests.LinkedLists
 {
     
-    public class LinkedListTests
+    public class StacksAndQueuesTests
     {
 
         [Fact]
