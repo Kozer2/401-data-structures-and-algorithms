@@ -11,6 +11,9 @@ namespace DataStructures.Tests.StackNQueue
     
     public class StacksAndQueuesTests
     {
+
+        // Stack tests
+
         [Fact]
         public void Stack_starts_with_empty_list()
         {
@@ -105,6 +108,11 @@ namespace DataStructures.Tests.StackNQueue
             // assert
             Assert.True(stack.isEmpty());
         }
+
+
+
+
+        // Queue tests
 
     }
 
