@@ -53,10 +53,58 @@ namespace DataStructures.Tests.StackNQueue
             Assert.Equal(9, result);
         }
 
+        [Fact]
+        public void Peek_works_and_returns_correct_value()
+        {
+            // arrange
+            DataStructures.StackNQueue.Stack<int> stack = new DataStructures.StackNQueue.Stack<int>();
+            stack.Push(5);
+            stack.Push(7);
+            stack.Push(9);
+
+            // act
+            int result = stack.Peek();
+
+            // assert
+            Assert.Equal(9, result);
+        }
 
 
+        [Fact]
+        public void Calling_Pop_or_Peek_on_empty_stack_raises_exception()
+        {
+            // arrange
+            DataStructures.StackNQueue.Stack<int> stack = new DataStructures.StackNQueue.Stack<int>();
+
+            // assert
+            Assert.True(stack.isEmpty());
+            Assert.Throws<NullReferenceException>(() =>
+            {
+                // act
+                int result = stack.Peek();
+                int result2 = stack.Pop();
 
 
+            });
+        }
+
+        [Fact]
+        public void Pop_empties_Stack_when_called_multiple_times()
+        {
+            // arrange
+            DataStructures.StackNQueue.Stack<int> stack = new DataStructures.StackNQueue.Stack<int>();
+            stack.Push(5);
+            stack.Push(7);
+            stack.Push(9);
+
+            // act
+            stack.Pop();
+            stack.Pop();
+            stack.Pop();
+
+            // assert
+            Assert.True(stack.isEmpty());
+        }
 
     }
 

@@ -26,13 +26,34 @@ namespace DataStructures.StackNQueue
             return Top == null;
         }
 
+        public T Peek()
+        {
+            if(Top.Value == null)
+            {
+                throw new ArgumentException("Argument out of bounds!");
+            }
+            else
+            {
+                return Top.Value;
+            }
+            
+        }
+
         public T Pop()
         {
-            T result = Top.Value;
+            if (Top.Value == null)
+            {
+                throw new NullReferenceException("Argument out of bounds!");
+            }
+            else
+            {
+                T result = Top.Value;
 
-            Top = Top.Next;
+                Top = Top.Next;
 
-            return result;
+                return result;
+            }
+         
         }
     }
 }
