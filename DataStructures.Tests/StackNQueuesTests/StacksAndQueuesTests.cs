@@ -78,7 +78,7 @@ namespace DataStructures.Tests.StackNQueue
 
             // assert
             Assert.True(stack.isEmpty());
-            Assert.Throws<NullReferenceException>(() =>
+            Assert.Throws<ArgumentException>(() =>
             {
                 // act
                 int result = stack.Peek();

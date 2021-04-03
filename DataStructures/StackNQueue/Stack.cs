@@ -28,7 +28,7 @@ namespace DataStructures.StackNQueue
 
         public T Peek()
         {
-            if(Top.Value == null)
+            if(Top == null)
             {
                 throw new ArgumentException("Argument out of bounds!");
             }
@@ -41,9 +41,9 @@ namespace DataStructures.StackNQueue
 
         public T Pop()
         {
-            if (Top.Value == null)
+            if (Top == null)
             {
-                throw new NullReferenceException("Argument out of bounds!");
+                throw new ArgumentException("Argument out of bounds!");
             }
             else
             {
