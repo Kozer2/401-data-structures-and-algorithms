@@ -1,5 +1,14 @@
 
 # 401-data-structures-and-algorithms
+Links to Tests:   
+![Array Challenge Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/CHallenges.Tests/ArrayChallenges)
+![Pseudo Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/CHallenges.Tests/PseudeoQueueTests)
+![Linked List Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/LinkedLists)
+![Stack and Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/StackNQueuesTests)
+
+
+
+
 
 # Reverse an Array
 This console app takes an array of an indeterminate length and then reverses it and returns it back to the user. 
