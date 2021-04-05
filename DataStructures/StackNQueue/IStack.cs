@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataStructures.StackNQueue
 {
-    class Queue
+    public interface IStack<T>
     {
-
+        void Push(T value);
+        T Pop();
+        T Peek();
+        bool IsEmpty { get; }
     }
 }
