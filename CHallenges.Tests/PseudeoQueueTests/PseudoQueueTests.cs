@@ -8,7 +8,7 @@ using Challenges.PseudoQueueChallenges;
 
 namespace Challenges.Tests.PseudeoQueueTests
 {
-   public class PseudoQueueTests
+   public class AnimalShelterTests
     {
         [Fact]
         public void Enqueue_and_IsEmpty_work()
