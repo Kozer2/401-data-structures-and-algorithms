@@ -20,13 +20,13 @@ namespace Challenges.AnimalShelter
 
         public T Dequeue()
         {
-          
+            ReverseStorage(false);
             return ReverseStack.Pop();
         }
 
         public void Enqueue(T value)
         {
-       
+            ReverseStorage(true);
             Storage.Push(value);
         }
 
@@ -34,5 +34,34 @@ namespace Challenges.AnimalShelter
         {
             throw new NotImplementedException();
         }
+
+        private void ReverseStorage(bool input)
+        {
+            if (IsEmpty)
+            {
+                return;
+            }
+            if (input)
+            {
+                if (Storage.isEmpty())
+                {
+                    while (!ReverseStack.isEmpty())
+                        Storage.Push(ReverseStack.Pop());
+                }
+                else
+                {
+                    if (ReverseStack.isEmpty())
+                    {
+                        while (!Storage.isEmpty())
+                        {
+                            ReverseStack.Push(Storage.Pop());
+                        }
+                    }
+                }
+            }
+        }
+
+
+
     }
 }

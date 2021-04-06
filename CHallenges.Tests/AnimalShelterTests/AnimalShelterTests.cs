@@ -24,7 +24,21 @@ namespace Challenges.Tests.AnimalShelterTests
 
         }
 
-       
+        [Fact]
+        public void Dequeue_works()
+        {
+            // arrange
+            AnimalShelter<string> animal = new AnimalShelter<string>();
+            animal.Enqueue("Dog");
+
+            // act
+            animal.Enqueue("Cat");
+            string result = animal.Dequeue();
+
+            // assert
+            Assert.Equal("Dog", result);
+
+        }
 
 
 
