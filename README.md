@@ -5,7 +5,7 @@ Links to Tests:
 [Pseudo Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/CHallenges.Tests/PseudeoQueueTests)  
 [Linked List Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/LinkedLists)  
 [Stack and Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/StackNQueuesTests)  
-[Anima Shelter](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/AnimalShelter)  
+[Animal Shelter](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/AnimalShelter)  
 
 
 
