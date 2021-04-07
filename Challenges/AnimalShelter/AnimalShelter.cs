@@ -26,6 +26,10 @@ namespace Challenges.AnimalShelter
 
         public void Enqueue(T value)
         {
+            /*if(value != "Dog" )
+            {
+
+            }*/
             ReverseStorage(true);
             Storage.Push(value);
         }
