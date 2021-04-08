@@ -203,3 +203,29 @@ This is Big O^2
 
 ## Solution
 ![My Groups Whiteboard](assests/Whiteboard-8.PNG "Whiteboard")
+
+
+
+
+# Challenge 13
+# Challenge Summary
+Create a stack with a method that takes in a string. This string will contain opening and closing brackets \[,\{,\(,\),\},\]. 
+If they are balanced return true. Otherwise return false. 
+
+## Challenge Description
+On your main file, create…
+C#: a method called public static bool MultiBracketValidation(string input)
+JavaScript: a function called multiBracketValidation(input)
+Python: a function called multi_bracket_validation(input)
+Java: a method public static boolean multiBracketValidation(String input)
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : \(\)
+Square Brackets : \[\]
+Curly Brackets : \{\}
+
+## Approach & Efficiency
+This is Big On
+
+## Solution
+![My Groups Whiteboard](assests/Whiteboard-9.PNG "Whiteboard")
