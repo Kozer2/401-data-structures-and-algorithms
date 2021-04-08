@@ -6,6 +6,7 @@ Links to Tests:
 [Linked List Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/LinkedLists)  
 [Stack and Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/StackNQueuesTests)  
 [Animal Shelter](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/AnimalShelter)  
+[MultiBracket](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/MultiBracketChallenge/MultiBracketValidation.cs) 
 
 
 
@@ -228,4 +229,4 @@ Curly Brackets : \{\}
 This is Big On
 
 ## Solution
-![My Groups Whiteboard](assests/Whiteboard-9.PNG "Whiteboard")
+![My Groups Whiteboard](assests/Whiteboard-9.png "Whiteboard")
