@@ -8,6 +8,5 @@ namespace DataStructures.StackNQueue
 {
     class Queue
     {
-
     }
 }
