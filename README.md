@@ -231,7 +231,7 @@ This is Big On
 
 ## Solution
 
-![My Groups Whiteboard](Assests/Whiteboard-9.PNG "Whiteboard")        
+![My Groups Whiteboard](assests/Whiteboard-9.png "Whiteboard")        
 
 
 
