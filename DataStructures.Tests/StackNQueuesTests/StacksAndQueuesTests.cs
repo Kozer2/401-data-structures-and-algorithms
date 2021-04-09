@@ -9,7 +9,7 @@ using Xunit;
 namespace DataStructures.Tests.StackNQueue
 {
     
-    public class StacksAndQueuesTests
+    public class TreeTests
     {
 
         // Stack tests
