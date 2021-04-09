@@ -8,41 +8,64 @@ namespace Challenges.MultiBracketChallenge
 {
     public class MultiBracketValidationClass
     {
-        public static bool MultiBracketValidation(string input)
+        public static bool CheckBracketBalance(string input)
         {
-            var stack = new Stack<char>();
-            // dictionary of matching starting and ending pairs
-            var allowedChars = new Dictionary<char, char>() { { '(', ')' }, { '[', ']' }, { '{', '}' } };
+            Stack<char> stack = new Stack<char>();
+            bool hasBracket = false; 
 
-            var wellFormated = true;
-            foreach (var chr in input)
+            foreach (char c in input)
             {
-                if (allowedChars.ContainsKey(chr))
+
+                switch (c)
                 {
-                    // if starting char then push on stack
-                    stack.Push(chr);
-                }
-                // ContainsValue is linear but with a small number is faster than creating another object
-                else if (allowedChars.ContainsValue(chr))
-                {
-                    // make sure something to pop if not then know it's not well formated
-                    wellFormated = stack.Any();
-                    if (wellFormated)
-                    {
-                        // hit ending char grab previous starting char
-                        var startingChar = stack.Pop();
-                        // check it is in the dictionary
-                        wellFormated = allowedChars.Contains(new KeyValuePair<char, char>(startingChar, chr));
-                    }
-                    // if not wellformated exit loop no need to continue
-                    if (!wellFormated)
-                    {
+                    case '{':
+                        stack.Push(c);
+                        hasBracket = true;
                         break;
-                    }
+
+                    case '[':
+                        stack.Push(c);
+                        hasBracket = true;
+                        break;
+
+                    case '(':
+                        stack.Push(c);
+                        hasBracket = true;
+                        break;
+
+                    case '}':
+                        if (!stack.TryPop(out char o) || o != '{')
+                        {
+                            return false;
+                        }
+
+                        break;
+
+                    case ']':
+                        if (!stack.TryPop(out o) || o != '[')
+                        {
+                            return false;
+                        }
+                           
+                        break;
+
+                    case ')':
+                        if (!stack.TryPop(out o) || o != '(')
+                        {
+                            return false;
+                        }
+                            
+                        break;
                 }
             }
-            return wellFormated;
+            if (stack.Count != 0 || !hasBracket)
+            {
+                return false;
+            }
+                
+            return true;
         }
-        MultiBracketValidation("{}")
     }
 }
+
+
