@@ -525,3 +525,16 @@ Define a method named contains that accepts a value, and returns a boolean indic
 We were provided with the pre-order code. Going from there I created the post and the in order code changing the order the trees searches. 
 
 
+
+# Challenge 16
+# Challenge Summary
+Search a tree for its max value
+
+## Challenge Description
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Approach
+Our solution is Big O (N) 
+
+![My Groups Whiteboard](assests/whiteboard-10.jpeg "Whiteboard")
+
