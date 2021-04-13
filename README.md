@@ -538,3 +538,19 @@ Our solution is Big O (N)
 
 ![My Groups Whiteboard](assests/whiteboard-10.jpeg "Whiteboard")
 
+
+
+
+
+# Challenge 17
+# Challenge Summary
+Search a tree by its breadth and report the value of every node
+
+## Challenge Description
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Approach
+
+
+![My Groups Whiteboard](assests/Whiteboard-11.PNG "Whiteboard")
+
