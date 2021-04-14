@@ -19,7 +19,28 @@ namespace DataStructures.Trees
 
         public IEnumerable<int> BreadthFirst()
         {
-            yield break; 
+            // queue
+            var breadth = new Queue<Node>();
+            
+            breadth.Enqueue(Root);
+
+            // while
+            while(breadth.Count > 0)
+            {
+                var front = breadth.Dequeue();
+
+                if (front == null)
+                    continue;
+
+                yield return front.Value;
+
+                if (front.Left != null)
+                    breadth.Enqueue(front.Left);
+
+                if (front.Right != null)
+                    breadth.Enqueue(front.Right);
+            }
+            /*yield break;*/
         }
 
 

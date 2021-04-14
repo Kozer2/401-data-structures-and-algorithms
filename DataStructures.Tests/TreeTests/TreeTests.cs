@@ -189,6 +189,67 @@ namespace DataStructures.Tests.TreeTests
 
         }
 
+        [Fact]
+        public void BreadthFirst_returns_empty_tree()
+        {
+            // arrange
+            var tree = new BinaryTree();
+
+            // act
+            var result = tree.BreadthFirst();
+
+            // assert
+            Assert.Empty(result);
+        }
+
+        [Fact]
+        public void BreadthFirst_returns_root_for_tree_with_1_thing()
+        {
+            // arrange
+            var tree = new BinaryTree();
+            tree.Root = new Node { Value = 5 };
+
+            // act
+            var result = tree.BreadthFirst();
+
+            // assert
+            Assert.Equal(new[] { 5 }, result);
+        }
+
+        [Fact]
+        public void BreadthFirst_works_for_big_tree()
+        {
+            // arrange
+            var tree = new BinaryTree();
+            tree.Root = new Node { Value = 2 };
+            tree.Root.Left = new Node { Value = 7 };
+            tree.Root.Left.Left = new Node { Value = 2 };
+            tree.Root.Left.Right = new Node
+            {
+                Value = 6,
+                Left = new Node { Value = 5 },
+                Right = new Node { Value = 11 },
+            };
+            tree.Root.Right = new Node
+            {
+                Value = 5,
+                Right = new Node
+                {
+                    Value = 9,
+                    Left = new Node
+                    {
+                        Value = 4
+                    }
+                }
+            };
+
+
+            // act
+            var result = tree.BreadthFirst();
+
+            // assert
+            Assert.Equal(new[] { 2, 7, 5, 2, 6, 9, 5, 11, 4 }, result);
+        }
 
     }
 
