@@ -16,6 +16,17 @@ namespace DataStructures.Trees
             PreOrder(Root, result);
             return result;
         }
+
+        public IEnumerable<int> BreadthFirst()
+        {
+            yield break; 
+        }
+
+
+
+
+
+
         private void PreOrder(Node node, List<int> result)
         {
             // Stretch goal: use yield return instead
@@ -70,7 +81,19 @@ namespace DataStructures.Trees
 
             
         }
+  
+        // max code
+        /*public int MaxNode(Node node)
+        {
+            if (node == null) throw new InvalidOperationException();
 
+            if(node.Left!= null)
+            {
+                int maxLeft = MaxNode(node.Left);
+                if (maxLeft > maxLeft)
+                    max = maxLeft;
+            }
+        }*/
 
 
 
