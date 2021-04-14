@@ -243,7 +243,6 @@ namespace DataStructures.Tests.TreeTests
                 }
             };
 
-
             // act
             var result = tree.BreadthFirst();
 

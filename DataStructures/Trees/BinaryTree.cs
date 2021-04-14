@@ -25,9 +25,9 @@ namespace DataStructures.Trees
             breadth.Enqueue(Root);
 
             // while
-            while(breadth.Count > 0)
+            while(breadth.TryDequeue(out Node front)) 
             {
-                var front = breadth.Dequeue();
+                /*var front = breadth.Dequeue();*/
 
                 if (front == null)
                     continue;
