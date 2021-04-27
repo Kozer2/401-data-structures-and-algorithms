@@ -25,8 +25,21 @@ namespace Challenges.Tests.ArrayChallenges
             Assert.Equal(arr, result);
         }
 
+        /*[Fact]
+        public void MergeSort_returns_a_sorted_array()
+        {
+            // arrange
+            int[] arr = new int[6] { 8, 4, 23, 42, 16, 15 };
 
-        
+
+            // act
+            int[] result = MergeSortChallenge.MergeSort(arr);
+
+
+            //assert
+            Assert.Equal(arr, result);
+        }*/
+
 
     }
 }
