@@ -1,7 +1,7 @@
 
 # Insertion Sort Blog post
 
-Inserstion sort works by taking the first item in an array and comparing it to the next. If it is greater than that next item, the first one takes its place. If it takes the place of an index that is also smaller than any preceding it, it will sort it into the correct spot.
+Insertion sort works by taking the first item in an array and comparing it to the next. If it is greater than that next item, the first one takes its place. If it takes the place of an index that is also smaller than any preceding it, it will sort it into the correct spot.
 It is not the most efficient way to sort an array. Its time complexity is O(n^2)
 
 Example: We have a list of un-sorted numbers
