@@ -3,7 +3,7 @@
 
 
 # 401-data-structures-and-algorithms
-Links to Tests:   
+Links to Code:   
 [Array Challenges](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/ArrayChallenges)
 [Pseudo Queue](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/PseudoQueueChallenges)
 [Linked List](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
