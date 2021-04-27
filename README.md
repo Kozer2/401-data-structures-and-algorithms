@@ -4,10 +4,11 @@
 
 # 401-data-structures-and-algorithms
 Links to Tests:   
-[Array Challenge Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/CHallenges.Tests/ArrayChallenges)  
-[Pseudo Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/CHallenges.Tests/PseudeoQueueTests)  
-[Linked List Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/LinkedLists)  
-[Stack and Queue Tests](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures.Tests/StackNQueuesTests)  
+[Array Challenges](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/ArrayChallenges)
+[Pseudo Queue](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/PseudoQueueChallenges)
+[Linked List](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/LinkedLists)
+[Stack and Queue](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/StackNQueue)  
+[Trees](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/DataStructures/Trees)
 [Animal Shelter](https://github.com/Kozer2/401-data-structures-and-algorithms/tree/main/Challenges/AnimalShelter)  
 [MultiBracket](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/Challenges/MultiBracketChallenge/MultiBracketValidation.cs)   
 [BinaryTree](https://github.com/Kozer2/401-data-structures-and-algorithms/blob/main/DataStructures/Trees/BinaryTree.cs)
