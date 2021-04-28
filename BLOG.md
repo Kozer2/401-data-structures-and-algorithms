@@ -1,4 +1,5 @@
 
+
 # Insertion Sort Blog post
 
 Insertion sort works by taking the first item in an array and comparing it to the next. If it is greater than that next item, the first one takes its place. If it takes the place of an index that is also smaller than any preceding it, it will sort it into the correct spot.
@@ -75,4 +76,3 @@ We will now look at an example:
     5. [15] and [16] are compared and merged into [15] [16]
     6. [4] [8] and [23] [42] are now merged to [4] [8] [23] [42]
     7. [4] [8] [23] [42] is now compared to [15] [16] and merged to [4] [8] [15] [16] [23] [42]
-
