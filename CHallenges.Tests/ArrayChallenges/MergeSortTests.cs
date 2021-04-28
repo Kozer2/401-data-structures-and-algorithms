@@ -10,7 +10,7 @@ namespace Challenges.Tests.ArrayChallenges
 {
    public class MergeSortTests
     {
-        [Fact]
+        /*[Fact]
         public void MergeSort_returns_an_array()
         {
             // arrange
@@ -23,7 +23,7 @@ namespace Challenges.Tests.ArrayChallenges
 
             //assert
             Assert.Equal(arr, result);
-        }
+        }*/
 
         /*[Fact]
         public void MergeSort_returns_a_sorted_array()

@@ -1,7 +1,8 @@
 
+
 # Insertion Sort Blog post
 
-Inserstion sort works by taking the first item in an array and comparing it to the next. If it is greater than that next item, the first one takes its place. If it takes the place of an index that is also smaller than any preceding it, it will sort it into the correct spot.
+Insertion sort works by taking the first item in an array and comparing it to the next. If it is greater than that next item, the first one takes its place. If it takes the place of an index that is also smaller than any preceding it, it will sort it into the correct spot.
 It is not the most efficient way to sort an array. Its time complexity is O(n^2)
 
 Example: We have a list of un-sorted numbers
@@ -20,9 +21,10 @@ Example: We have a list of un-sorted numbers
     5. [4] [8] [15] [23] --> [16] [42]
     6. [4] [8] [15] --> [16] [23] [42]
 
+
 # Merge Sort Blog
 
-Merge sort takes a list and divides it in 2. It then takes those 2 lists and divides them by 2 and so on until it has a list of 1. It then takes that list of 1 and compares it to the next list. It then combines them into one list.
+Merge sort takes a list and divides it in 2. It then takes those 2 lists and divides them by 2 and so on until it has a list of 1. It then takes that list of 1 and compares it to the next list. It sorts them then.
 Pseudo Code:
 
 ```C#
