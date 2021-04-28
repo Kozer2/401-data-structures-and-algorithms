@@ -339,3 +339,18 @@ This sort is Big O(n log(n))
 
 ![My Groups Whiteboard](assests/Whiteboard-14.jpeg "Whiteboard")
 
+
+
+# Challenge 28
+# Challenge Summary
+Write a algorithm that sorts an array using Quick Sort
+
+## Challenge Description
+Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+
+Once you are done with your article, code a working, tested implementation of Quick Sort based on the pseudocode provided.
+
+## Approach
+This sort is Big O(n log(n))
+
+![My Groups Whiteboard](assests/Whiteboard-15.PNG "Whiteboard")
