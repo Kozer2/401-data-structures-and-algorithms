@@ -22,7 +22,7 @@ Example: We have a list of un-sorted numbers
 
 # Merge Sort Blog
 
-Merge sort takes a list and divides it in 2. It then takes those 2 lists and divides them by 2 and so on until it has a list of 1. It then takes that list of 1 and compares it to the next list. It sorts them then.
+Merge sort takes a list and divides it in 2. It then takes those 2 lists and divides them by 2 and so on until it has a list of 1. It then takes that list of 1 and compares it to the next list. It then combines them into one list.
 Pseudo Code:
 
 ```C#
