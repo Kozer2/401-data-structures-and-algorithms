@@ -76,3 +76,15 @@ We will now look at an example:
     5. [15] and [16] are compared and merged into [15] [16]
     6. [4] [8] and [23] [42] are now merged to [4] [8] [23] [42]
     7. [4] [8] [23] [42] is now compared to [15] [16] and merged to [4] [8] [15] [16] [23] [42]
+
+
+# Quick Sort Blog
+
+Quick sort is a tool used to sort lists. It takes a list of numbers, finds a pivot point and compares the rest of the list to that point. If a list item is smaller than the pivot point it is moved to the left side. If it is larger, the right. From there it continues to use recursive to sort the different sections until it is sorted. 
+
+1. [8] [4] [23] [42] [15] [16]
+2. We take a pivot point of [8] 
+3. We now compare the rest of the list to [8]. Getting [4] [8] and [23] [42] [15] [16]
+4. We now take a new pivot point of [23]
+5. Comparing the rest gives us: [15] [16] [23] and [42] 
+6. Putting them all back together gives us a sorted array of [4] [8] [15] [16] [23] [42]
