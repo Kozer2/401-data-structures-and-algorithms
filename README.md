@@ -388,3 +388,18 @@ Without utilizing any of the built-in library methods available to your language
 ## Approach
 This solution uses Big O(n^2)
 ![My Groups Whiteboard](assests/Whiteboard-16.jpeg "Whiteboard")
+
+
+
+
+# Challenge Summary
+Write a function that in binary tree parameters and returns the values found in both trees
+
+## Challenge Description
+Write a function called tree_intersection that takes two binary tree parameters.  
+Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.  
+
+
+## Approach
+This solution uses Big O(n log n)
+![My Groups Whiteboard](assests/Whiteboard-17.PNG "Whiteboard")
