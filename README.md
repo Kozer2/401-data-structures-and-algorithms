@@ -391,7 +391,7 @@ This solution uses Big O(n^2)
 
 
 
-
+# Challenge 32
 # Challenge Summary
 Write a function that in binary tree parameters and returns the values found in both trees
 
@@ -403,3 +403,24 @@ Without utilizing any of the built-in library methods available to your language
 ## Approach
 This solution uses Big O(n log n)
 ![My Groups Whiteboard](assests/Whiteboard-17.PNG "Whiteboard")
+
+
+
+
+# Challenge 34
+# Challenge Summary
+Write a function that uses LEFTJOIN to join 2 hashmaps together
+
+## Challenge Description
+Write a function that LEFT JOINs two hashmaps into a single data structure.  
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.  
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.  
+Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.  
+LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the   result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.  
+The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.  
+Avoid utilizing any of the library methods available to your language.  
+
+
+## Approach
+
+![My Groups Whiteboard](assests/Whiteboard-18.jpeg "Whiteboard")
