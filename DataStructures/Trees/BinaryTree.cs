@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Trees
 {
-    public class BinaryTree
+    public class graph
     {
         public Node Root { get; set; }
 

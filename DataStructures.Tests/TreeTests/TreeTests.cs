@@ -18,7 +18,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -35,7 +35,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -54,7 +54,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -76,7 +76,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -95,7 +95,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -113,7 +113,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -136,7 +136,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -158,7 +158,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
@@ -177,7 +177,7 @@ namespace DataStructures.Tests.TreeTests
         {
 
             // arrange
-            BinaryTree tree = new BinaryTree();
+            graph tree = new graph();
 
             // act
             tree.Root = new Node();
