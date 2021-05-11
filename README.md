@@ -484,3 +484,18 @@ Extend your graph object with a breadth-first traversal method that accepts a st
 ## Approach
 
 ![My Groups Whiteboard](assests/Whiteboard-20.PNG "Whiteboard")
+
+
+
+# Challenge 33
+# Challenge Summary
+Create a method that will take in a graph and return the price of flights to cities from it
+
+## Challenge Description
+Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+
+
+
+## Approach
+
+![My Groups Whiteboard](assests/Whiteboard-21.PNG "Whiteboard")
